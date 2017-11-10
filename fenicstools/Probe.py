@@ -52,7 +52,7 @@ class Probes(compiled_module.Probes):
     def __getitem__(self, i):
         return self.get_probe_id(i), Probe(self.get_probe(i))
 
-    def __next__(self):
+    def next(self):
         try:
             p =  self[self.i]
         except:
@@ -136,7 +136,7 @@ class StatisticsProbes(compiled_module.StatisticsProbes):
     def __getitem__(self, i):
         return self.get_probe_id(i), StatisticsProbe(self.get_probe(i))
 
-    def __next__(self):
+    def next(self):
         try:
             p = self[self.i]
         except:
