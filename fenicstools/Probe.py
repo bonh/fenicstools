@@ -1,3 +1,4 @@
+
 __author__ = "Mikael Mortensen <mikaem@math.uio.no>"
 __date__ = "2011-12-19"
 __copyright__ = "Copyright (C) 2011 " + __author__
@@ -5,7 +6,7 @@ __license__  = "GNU Lesser GPL version 3 or any later version"
 """
 This module contains functionality for efficiently probing a Function many times. 
 """
-from dolfin import *
+from dolfin import compile_extension_module
 from numpy import zeros, array, squeeze, reshape, save
 import os, inspect
 from mpi4py.MPI import COMM_WORLD as comm
